@@ -3,10 +3,10 @@
       
       <div class="col-md-6">
         <app-recipe-list (childevent)="reciveMessage($event)"></app-recipe-list>
-        {{ message }}
+        <!-- {{ message }} -->
       </div>
       <div class="col-md-6">
-        <!-- <app-recipe-detail></app-recipe-detail> -->
+        <app-recipe-detail [childMessage]="message"></app-recipe-detail>
       </div>
     </div>
   </div>

@@ -18,9 +18,9 @@ export class RecipeListComponent implements OnInit {
 
   ngOnInit() {
   }
-  onclick(name:string)
+  onclick(recipe:Recipe)
   {
-    this.childevent.emit(name);
+    this.childevent.emit(recipe);
   }
 
 }
