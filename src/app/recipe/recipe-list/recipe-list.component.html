@@ -1,0 +1,14 @@
+<ul class="list-group">
+  <li class="list-group-item clearfix" *ngFor="let recipe of recipes" (click)="onclick(recipe)">
+    <div class="detail pull-left">
+        <h4 class="h4-responsive h4">
+            {{ recipe.name }}
+          </h4>
+          <p>
+            {{ recipe.detail }}
+          </p>
+    </div>
+    <img [src]="recipe.imgPath" class="img img-responsive img-thumbnail pull-right" alt="">
+  </li>
+</ul>
+ 
