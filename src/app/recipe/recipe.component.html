@@ -1,12 +1,11 @@
   <div class="container">
     <div class="row">
-      
+        <app-new-recipe></app-new-recipe>
       <div class="col-md-6">
-        <app-recipe-list (childevent)="reciveMessage($event)"></app-recipe-list>
-        <!-- {{ message }} -->
+        <app-recipe-list></app-recipe-list>
       </div>
       <div class="col-md-6">
-        <app-recipe-detail [childMessage]="message"></app-recipe-detail>
+        <app-recipe-detail></app-recipe-detail>
       </div>
     </div>
   </div>

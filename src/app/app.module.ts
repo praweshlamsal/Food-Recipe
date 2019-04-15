@@ -11,6 +11,12 @@ import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component'
 import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { basicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './basic-highlight/better-highlight.directive';
+import { RecipeServiceService } from './recipe/recipe-service.service';
+import { FoodService } from './food.service';
+import { NewRecipeComponent } from './recipe/new-recipe/new-recipe.component';
+import { AngularFileUploaderModule } from 'angular-file-uploader';
 
 @NgModule({
   declarations: [
@@ -20,15 +26,19 @@ import { FormsModule } from '@angular/forms';
     ShoppingDetailComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    HeaderComponent
+    HeaderComponent,
+    basicHighlightDirective,
+    BetterHighlightDirective, 
+    NewRecipeComponent,
   ],
   imports: [
     RouterModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    AngularFileUploaderModule,
   ],
-  providers: [],
+  providers: [RecipeServiceService,FoodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,14 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe.component.css']
 })
 export class RecipeComponent implements OnInit {
-  public message:Recipe;
+  // public message:Recipe;
   constructor() { }
 
   ngOnInit() {
-  }
-
-  reciveMessage($event)
-  {
-  this.message= $event;
   }
 }
