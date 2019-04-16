@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Recipe } from '/recipe.module';
+// import { Recipe } from '/recipe.module';
 @Component({
   selector: 'app-recipe',
   templateUrl: './recipe.component.html',
   styleUrls: ['./recipe.component.css']
 })
 export class RecipeComponent implements OnInit {
-  public message:Recipe;
+  // public message:Recipe;
   constructor() { }
 
   ngOnInit() {
@@ -14,6 +14,6 @@ export class RecipeComponent implements OnInit {
 
   reciveMessage($event)
   {
-  this.message= $event;
+  // this.message= $event;
   }
 }
