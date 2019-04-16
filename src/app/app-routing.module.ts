@@ -4,7 +4,7 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 const routes: Routes = [
-  // { path:' ', redirectTo:'/recipe', pathMatch:'full'},
+  { path:'', redirectTo:'/recipe', pathMatch:'full'},
   // { path:'**', redirectTo:'', pathMatch:'full'},
   { path: 'recipe', component: RecipeComponent },
   { path: 'shopping', component: ShoppingListComponent},

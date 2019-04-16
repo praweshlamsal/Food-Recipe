@@ -12,8 +12,4 @@ export class RecipeComponent implements OnInit {
   ngOnInit() {
   }
 
-  reciveMessage($event)
-  {
-  // this.message= $event;
-  }
 }
